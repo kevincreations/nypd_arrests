@@ -42,7 +42,7 @@ SELECT
     COALESCE(m.march_murder_arrests, 0) AS 'march_murder_arrests'
 FROM
     v_jan_murder_arrests j
-RIGHT OUTER JOIN			--right outer join combines all record from the right table onto the lef table
+RIGHT OUTER JOIN			--right outer join combines all records from the right table onto the left table
     v_feb_murder_arrests f
         ON j.boro = f.boro
 RIGHT OUTER JOIN
