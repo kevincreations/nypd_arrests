@@ -37,7 +37,7 @@ CREATE VIEW v_march_murder_arrests AS
 /*joining 3 views together to display monthly arrests side by side*/
 SELECT
     m.boro,
-    COALESCE(january_murder_arrests, 0) AS 'jan_murder_arrests', --COALESCE avoids nulls and repalces them with 0
+    COALESCE(j.january_murder_arrests, 0) AS 'jan_murder_arrests', --COALESCE avoids nulls and repalces them with 0
     COALESCE(f.feb_murder_arrests, 0)  AS 'feb_murder_arrests',
     COALESCE(m.march_murder_arrests, 0) AS 'march_murder_arrests'
 FROM
@@ -52,7 +52,7 @@ RIGHT OUTER JOIN
 /*month-over-month murder arrests changes*/
 SELECT
     m.boro,
-    COALESCE(f.feb_murder_arrests,0) - COALESCE(january_murder_arrests, 0) AS 'jan_to_feb_murder_arrest_chanages',
+    COALESCE(f.feb_murder_arrests,0) - COALESCE(j.january_murder_arrests, 0) AS 'jan_to_feb_murder_arrest_chanages',
     COALESCE(m.march_murder_arrests, 0) - COALESCE(f.feb_murder_arrests, 0)  AS 'feb_to_march_murder_arrest_changes'
 FROM
     v_jan_murder_arrests j
