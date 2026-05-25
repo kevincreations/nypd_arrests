@@ -1,7 +1,7 @@
 /*creating view of amount of murder arrests in january in each boro*/
 CREATE VIEW v_jan_murder_arrests AS			
 		SELECT
-        boro,
+       			 boro,
 				count(*) AS 'january_murder_arrests'
 		FROM
 				nypd_arrests
