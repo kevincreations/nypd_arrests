@@ -73,7 +73,7 @@ JOIN
 JOIN
 		m_arrests  m
 	ON 
-		q.age_group = m.age_group
+		q.age_group = m.age_group;
 
 /*arrests by age group citywide*/
 SELECT
