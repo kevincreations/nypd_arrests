@@ -72,6 +72,7 @@ SET
 		police_description = 'Unknown'
 WHERE
 		police_description= '(null)’;
+
 /*replacing NULL with Unknown under police_code column*/
 UPDATE 
 		nypd_arrests
