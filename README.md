@@ -9,17 +9,19 @@ The dataset required significant amount of preparation before analysis. It conta
 - Column names were standardized for clarity.
 - Manipulated data with CASE statements to standardize categorical values, replace abbreviations with descriptive labels, and handle missing data (NULL and '(null)' values).
 - Dates were standardized.
-## Borough Arrest Distribution Dashboard
-<img width="550" height="490" alt="Screenshot 2026-05-28 at 1 33 46 PM" src="https://github.com/user-attachments/assets/a64e3d3b-3e60-4bdf-8db5-a6619c132af3" />
+## Borough Arrests and Offense Distribution
+<img width="550" height="510" alt="Screenshot 2026-05-29 at 11 41 02 AM" src="https://github.com/user-attachments/assets/6927347c-0474-4072-b526-9b1f49ceb06a" />
 
-This Tableau dashboard analyzes arrest distribution across NYC boroughs and offense severity levels. The visualizations compare total arrest counts by borough while also breaking down arrests into felony, misdemeanor, violation, infraction, and unknown offense classifications. The 'Unknown' means there was no level of offense included in the dataset. 
+This dashboard investigates NYC arrest patterns by comparing total arrests across boroughs, analyzing offense classifications within each borough, and investigating further into the most common misdemeanor charges after identifying misdemeanors as the city's dominant offense category. The top left chart organizes arrests by offense classification, including felonies, misdemeanors, violations, infractions, and unknown offenses. Arrests with missing level of offense data were grouped into the "Unknown" category to ensure they remained represented in the analysis. Unknown offense classifications is very minimum meaning most arrests were categorized at the time of arrest
+
 ## Key Takeaways
+- Arrest patterns remain consistent across all five boroughs
 - Brookyln drives the arrest count citywide
 - Misdemeanor charges drives the amount of arrests in each borough followed by felonies
-- Arrest patterns remain consistent across all five boroughs
-- Unknown offense classifications is very minimum meaning most arrests were categorized at the time of arrest
+- Assault in the Third Degree ranks as the leading misdemeanor charge in NYC followed closely by larceny 
+
 ## Age Distribution Dashboard
-<img width="550" height="490" alt="Screenshot 2026-05-28 at 12 40 24 PM" src="https://github.com/user-attachments/assets/a62e533d-3694-4665-bfae-8f0ab7992f8a" />
+<img width="550" height="510" alt="Screenshot 2026-05-28 at 12 40 24 PM" src="https://github.com/user-attachments/assets/a62e533d-3694-4665-bfae-8f0ab7992f8a" />
 
 In this dashboard, age groups are visualized in the pie chart and bar charts. The pie chart displays the distribution of total arrests across different age groups. The Unknown means an age group wasn't reported during the time of the arrest, which accounts for a good portion of all arrests. The bar charts display arrest totals for each age group across the different boroughs.
 
@@ -30,7 +32,8 @@ In this dashboard, age groups are visualized in the pie chart and bar charts. Th
 - Brooklyn consistently records the highest arrest totals across all age demographics
 
 ## Level of Offense Dashboard
-<img width="550" height="490" alt="Screenshot 2026-05-28 at 1 51 47 PM" src="https://github.com/user-attachments/assets/4b127278-4b87-46cf-a682-261511ee8432" />
+<img width="550" height="510" alt="Screenshot 2026-05-29 at 10 27 23 AM" src="https://github.com/user-attachments/assets/45a7b515-8bea-4005-9107-344ae4062d34" />
+
 
 This dashboard provides a month-by-month view of citywide arrests by offense level. The top graph displays higher-level offenses such as felonies and misdemeanors, while the bottom graph highlights lower-level offenses including violations, infractions, and arrests with unknown offense classifications. The dashboard uses two separate charts to improve readability, as the larger y-axis scale of felony and misdemeanor arrests made trends in the smaller categories difficult to distinguish.
 
@@ -38,3 +41,9 @@ This dashboard provides a month-by-month view of citywide arrests by offense lev
 - Violation arrests showed a steady decline month over month
 - Arrest totals for both felonies and misdemeanors declined in February before increasing again in March
 - The contrast in scale between major and minor offense categories highlights how heavily citywide arrests are concentrated within felony and misdemeanor classifications
+
+## Additional Analysis
+Several additional analyses were explored during the project, though they were ultimately not visualized.
+- Monthly city-wide arrests
+- Felonies in each borough
+- Monthly murder arrests
