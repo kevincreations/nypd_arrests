@@ -27,25 +27,24 @@ GROUP BY
 
 /*updating null in multiple columns at once with Unknown*/
 UPDATE 
-	nypd_arrests
+			nypd_arrests
 SET
-	lvl_of_offense = CASE
-			WHEN 
-				lvl_of_offense IS NULL THEN 'Unknown'
-			WHEN
-				lvl_of_offense = '(null)' THEN 'Unknown'
-			WHEN 
-				lvl_of_offense = '9' THEN 'Unknown'
-			ELSE 					-- **very important to include ELSE or it will change the other boros to NULL
-				lvl_of_offense		
-			END,
-/*updating null entry with unknown under law_code column*/		
-	law_code = CASE
-			WHEN 
-				law_code IS NULL THEN 'Unknown'
-			ELSE
-				law_code
-			END;
+			lvl_of_offense = CASE
+					WHEN 
+						lvl_of_offense IS NULL THEN 'Unknown'
+					WHEN
+						lvl_of_offense = '(null)' THEN 'Unknown'
+					WHEN 
+						lvl_of_offense = '9' THEN 'Unknown'
+					ELSE 					-- **very important to include ELSE or it will change the other boros to NULL
+						lvl_of_offense		
+					END,
+			law_code = CASE
+					WHEN 
+						law_code IS NULL THEN 'Unknown'
+					ELSE
+						law_code
+					END;
 
 /*Manipulating the boro column by changing B to BX and K to BK to distinguish between the two borough abbreviations.*/ 
 UPDATE
