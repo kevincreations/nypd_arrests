@@ -1,23 +1,6 @@
-/*Manipulating data with CASE statement to distinguish the violation letters under the lvl_of_offense column*/
-UPDATE		
-			nypd_arrests
-SET
-			lvl_of_offense = CASE
-					WHEN 
-							lvl_of_offense = 'M' THEN 'Misdemeanor'
-					WHEN	
-							lvl_of_offense = 'F' THEN 'Felony'
-					WHEN
-							lvl_of_offense = 'V' THEN 'Violation'
-					WHEN 
-							lvl_of_offense = 'I' THEN 'Infraction'
-					WHEN
-							lvl_of_offense = '9' THEN 'Unknown'
-					ELSE
-							lvl_of_offense
-					END;
+/* A significant amount of data validation was performed using GROUP BY to uncover inconsistencies and various forms of missing data. 
+This first query serves as an example of a process that was repeated across numerous columns*/
 
-/*Using he GROUP clause to group column values together to display every value once, it finds nulls and other strange entries*/
 SELECT
 		lvl_of_offense
 FROM
@@ -44,6 +27,25 @@ SET
 						law_code IS NULL THEN 'Unknown'
 					ELSE
 						law_code
+					END;
+
+/*Manipulating data with CASE statement to distinguish the violation letters under the lvl_of_offense column*/
+UPDATE		
+			nypd_arrests
+SET
+			lvl_of_offense = CASE
+					WHEN 
+							lvl_of_offense = 'M' THEN 'Misdemeanor'
+					WHEN	
+							lvl_of_offense = 'F' THEN 'Felony'
+					WHEN
+							lvl_of_offense = 'V' THEN 'Violation'
+					WHEN 
+							lvl_of_offense = 'I' THEN 'Infraction'
+					WHEN
+							lvl_of_offense = '9' THEN 'Unknown'
+					ELSE
+							lvl_of_offense
 					END;
 
 /*Manipulating the boro column by changing B to BX and K to BK to distinguish between the two borough abbreviations.*/ 
