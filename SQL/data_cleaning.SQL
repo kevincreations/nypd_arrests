@@ -1,4 +1,4 @@
-/* A significant amount of data validation was performed using GROUP BY to uncover inconsistencies and various forms of missing data. 
+/*A significant amount of data validation was performed using GROUP BY to uncover inconsistencies and various forms of missing data. 
 This first query serves as an example of a process that was repeated across numerous columns*/
 
 SELECT
