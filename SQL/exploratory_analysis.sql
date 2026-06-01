@@ -93,3 +93,22 @@ RIGHT OUTER JOIN
     v_march_murder_arrests m
         ON f.boro = m.boro;
 
+/*using subqueries to find arrests each month*/
+SELECT
+		count(*) AS 'jan_arrests',
+		(SELECT
+			count(*)
+		FROM
+			nypd_arrests
+		WHERE 
+			arrest_date BETWEEN '2026-02-01' AND '2026-02-28') AS 'feb_arrests',
+		(SELECT
+			count(*) 
+		FROM
+			nypd_arrests
+		WHERE 
+			arrest_date BETWEEN '2026-03-01' AND '2026-03-31') AS 'march_arrests'
+FROM
+		nypd_arrests
+WHERE 
+		arrest_date BETWEEN '2026-01-01' AND '2026-01-31';
