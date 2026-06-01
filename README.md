@@ -1,5 +1,5 @@
 # nypd_arrests
-This project investigates arrest data in NYC during the first quarter of 2026 (January–March)
+This project investigates arrest data in NYC during the first quarter of 2026 (January–March). Data was sourced from the NYC Open Data.
 
 ## Project Background
 This project analyzes the arrest data by the NYPD throughout NYC which includes all five boroughs: Manhattan, Queens, The Bronx, Brooklyn, and Staten Island. Unlike many analytics projects that focus on numerical measures, this dataset contains a large amount of real world qualitative data. The dataset included 69,305 rows of data with each record containing an arrest by the NYPD which includes information about the type of crime, the date and coordinates of enforcement, and demographics related to the suspect. 
