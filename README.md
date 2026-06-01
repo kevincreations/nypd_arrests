@@ -1,8 +1,10 @@
 # nypd_arrests
-This project investigates arrest data in NYC during the first quarter of 2026 (January–March). Data is extracted from the NYC open data.
+This project investigates arrest data in NYC during the first quarter of 2026 (January–March)
 
 ## Project Background
-The purpose of this project is to investigate the NYPD arrest data throughout NYC which includes all five boroughs: Manhattan, Queens, The Bronx, Brooklyn, and Staten Island. Each row in the dataset contains an arrest by the NYPD and includes information about the type of crime, the date and coordinates of enforcement, and demographics related to the suspect. The analysis is based on all arrests recorded across NYC during the first quarter of 2026. This project stood out because the dataset contained a wider variety of qualitative data, making the analysis more unique. 
+This project analyzes the arrest data by the NYPD throughout NYC which includes all five boroughs: Manhattan, Queens, The Bronx, Brooklyn, and Staten Island. Unlike many analytics projects that focus on numerical measures, this dataset contains a large amount of real world qualitative data. The dataset included 69,305 rows of data with each record containing an arrest by the NYPD which includes information about the type of crime, the date and coordinates of enforcement, and demographics related to the suspect. 
+
+The main purpose of this analysis was to explore arrest patterns throughout the city, examine how arrests differ across boroughs and demographic groups, analyze offense classifications, and uncover the factors that contribute most to overall arrest activity. I hope these findings and screenshots of my graphs offer meaningful insight into arrest activity throughout biggest city in the USA and demonstrate how data analysis can be used to uncover patterns within large public datasets.
 
 # Tools Used
 The analysis was performed in SQLite using a combination of intermediate and advanced SQL techniques and was later visualized in Tableau. SQL skills demonstrated include:
