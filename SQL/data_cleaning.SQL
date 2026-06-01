@@ -1,4 +1,4 @@
-/*Manipulating data with CASE statement to distinguish the violation letters*/
+/*Manipulating data with CASE statement to distinguish the violation letters under the lvl_of_offense column*/
 UPDATE		
 			nypd_arrests
 SET
