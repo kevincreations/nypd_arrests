@@ -7,11 +7,11 @@ This project analyzes the arrest data by the NYPD throughout NYC which includes 
 The main purpose of this analysis was to explore arrest patterns throughout the city, examine how arrests differ across boroughs and demographic groups, analyze offense classifications, and uncover the factors that contribute most to overall arrest activity. I hope these findings and screenshots of my graphs offer meaningful insight into arrest activity throughout biggest city in the USA and demonstrate how data analysis can be used to uncover patterns within large public datasets. To view the interactive dashbaord go to https://public.tableau.com/app/profile/kevin.orellana/viz/nypd_arrests_visuals/ChargesDashboard
 
 # Tools Used
-SQLite – Data cleaning, transformation, and analysis
-SQL – Aggregations, CASE statements, subqueries, CTEs, and data exploration
-Tableau – Dashboard creation and data visualization
-Microsoft Excel – Initial data inspection and CSV preparation
-GitHub – Project documentation
+- SQLite – Data cleaning, transformation, and analysis
+- SQL – Aggregations, CASE statements, subqueries, CTEs, and data exploration
+- Tableau – Dashboard creation and data visualization
+- Microsoft Excel – Initial inspection, preperation 
+- GitHub – Project documentation
 
 ## Data Cleaning 
 The dataset required significant amount of preparation before analysis. By grouping column values with the GROUP BY clause I uncovered unique entries such as a variety of NULL values and unknown entries. The lvl_of_offense column contained a value of 9 that could not be identified after further research. Since it still represented an arrest without a known offense classification, the value was categorized as 'Unknown' alongside other null entries.
@@ -21,12 +21,12 @@ The dataset required significant amount of preparation before analysis. By group
 ## Borough Arrests and Offense Distribution
 <img width="550" height="510" alt="Screenshot 2026-05-29 at 11 41 02 AM" src="https://github.com/user-attachments/assets/6927347c-0474-4072-b526-9b1f49ceb06a" />
 
-This dashboard investigates NYC arrest patterns by comparing total arrests across boroughs, analyzing offense classifications within each borough, and investigating further into the most common misdemeanor charges after identifying misdemeanors as the city's dominant offense category. The top left chart organizes arrests by offense classification, including felonies, misdemeanors, violations, infractions, and unknown offenses. Arrests with missing level of offense data were grouped into the "Unknown" category to ensure they remained represented in the analysis. Unknown offense classifications is very minimum meaning most arrests were categorized at the time of arrest
+This dashboard investigates NYC arrest patterns by comparing total arrests across boroughs, analyzing offense classifications within each borough, and investigating further into the most common misdemeanor charges after identifying misdemeanors as the city's dominant offense category. The top left chart organizes arrests by offense classification, including felonies, misdemeanors, violations, infractions, and unknown offenses. Arrests with missing level of offense data were grouped into the "Unknown" category to ensure they remained represented in the analysis. Unknown offense classifications was very minimum meaning most arrests were categorized at the time of arrest
 
 ## Key Takeaways
 - Arrest patterns remain consistent across all five boroughs
 - Brookyln drives the arrest count citywide
-- Misdemeanor charges drives the amount of arrests in each borough followed by felonies
+- Misdemeanor charges accounts for most of the arrests in each borough followed by felonies
 - Assault in the Third Degree ranks as the leading misdemeanor charge in NYC followed closely by larceny 
 
 ## Age Distribution Dashboard
