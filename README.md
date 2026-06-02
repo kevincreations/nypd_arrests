@@ -7,14 +7,11 @@ This project analyzes the arrest data by the NYPD throughout NYC which includes 
 The main purpose of this analysis was to explore arrest patterns throughout the city, examine how arrests differ across boroughs and demographic groups, analyze offense classifications, and uncover the factors that contribute most to overall arrest activity. I hope these findings and screenshots of my graphs offer meaningful insight into arrest activity throughout biggest city in the USA and demonstrate how data analysis can be used to uncover patterns within large public datasets. To view the interactive dashbaord go to https://public.tableau.com/app/profile/kevin.orellana/viz/nypd_arrests_visuals/ChargesDashboard
 
 # Tools Used
-The analysis was performed in SQLite using a combination of intermediate and advanced SQL techniques and was later visualized in Tableau. SQL skills demonstrated include:
-- CTE
-- JOINS
-- CASE statements
-- DML 
-- VIEWS
-- Subqueries
-- Aggregate Functions
+SQLite – Data cleaning, transformation, and analysis
+SQL – Aggregations, CASE statements, subqueries, CTEs, and data exploration
+Tableau – Dashboard creation and data visualization
+Microsoft Excel – Initial data inspection and CSV preparation
+GitHub – Project documentation
 
 ## Data Cleaning 
 The dataset required significant amount of preparation before analysis. By grouping column values with the GROUP BY clause I uncovered unique entries such as a variety of NULL values and unknown entries. The lvl_of_offense column contained a value of 9 that could not be identified after further research. Since it still represented an arrest without a known offense classification, the value was categorized as 'Unknown' alongside other null entries.
